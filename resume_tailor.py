@@ -123,7 +123,7 @@ def tailor_resume(resume_text: str, job_description: str) -> str:
     # The system prompt and resume are stable, so we cache them.
     # The job description changes per application, so it is NOT cached.
     response = client.messages.create(
-        model="claude-sonnet-4-20250514",  # explicitly requested model
+        model="claude-sonnet-4-6",  # explicitly requested model
         max_tokens=4096,
 
         # Cache the system prompt — it never changes between runs
